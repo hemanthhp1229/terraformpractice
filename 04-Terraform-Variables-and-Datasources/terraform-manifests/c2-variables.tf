@@ -1,23 +1,25 @@
 # Input Variables
 # AWS Region
 variable "aws_region" {
-  description = "Region in which AWS Resources to be created"
+  description = "Region of aws resources"
   type = string
   default = "us-east-1"
+  
 }
 
 # AWS EC2 Instance Type
 variable "instance_type" {
-  description = "EC2 Instnace Type"
+  description = "type of ec2 instance"
   type = string
-  default = "t3.micro"
+  default = "t2.micro"
+  
 }
 
 # AWS EC2 Instance Key Pair
 variable "instance_keypair" {
-  description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
+  description = "key pair file used to login in into instance"
   type = string
-  default = "terraform-key"
+  default = "HemanthYahooaccount_KP"
+  
 }
-
 
