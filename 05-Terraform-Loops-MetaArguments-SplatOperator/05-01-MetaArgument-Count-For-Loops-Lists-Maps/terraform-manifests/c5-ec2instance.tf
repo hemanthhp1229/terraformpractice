@@ -14,6 +14,7 @@ resource "aws_instance" "myec2vm" {
   }
 }
 
+
 /*
 # Drawbacks of using count in this example
 - Resource Instances in this case were identified using index numbers 
